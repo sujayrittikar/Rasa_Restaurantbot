@@ -1,0 +1,10 @@
+[
+  {
+    "text": "great",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.5723083019256592
+    }
+  }
+]
