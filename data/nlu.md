@@ -62,6 +62,12 @@
 - don't know
 - I don't think
 - no thanks
+- I don't know what to eat
+- I have no idea
+- Suggest something, not sure
+- something
+- Show something
+- I don't know cuisines
 
 ## intent:mood_great
 - perfect
@@ -129,6 +135,7 @@
 - [Salads](cuisine) would be nice
 - I'll taste some [seafood](cuisine) 
 - Bring me [Rajasthani](cuisine)
+- [Pizza](cuisine)
 
 ## intent: location
 - I live in mumbai

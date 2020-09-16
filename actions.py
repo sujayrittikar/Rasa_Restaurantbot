@@ -149,6 +149,28 @@ class Zomato:
 
 		return l
 
+	def getDefaultRestaurants(self, location):
+		
+		loc = self.getId(location)
+		queryString = {
+			"entity_id": loc[2],
+			"entity_type": loc[3],
+			"count": 3
+		}
+
+		headers = {'Accept': 'application/json', 'user-key': self.key}
+		response = requests.get(self.baseurl + "search", params=queryString, headers=headers)
+
+		x = []
+		if response.ok is True:
+			l = response.json()["restaurants"]
+			for i in l:
+				name = i["restaurant"]["name"]
+				url = i["restaurant"]["url"]
+				x.append(name)
+				x.append(url)
+		return x
+
 class ActionShowRestaurants(Action):
 
 	def name(self):
@@ -188,3 +210,30 @@ class ActionShowRestaurants(Action):
 				dispatcher.utter_message(template= "I'm sorry, couldn't find restaurants." )
 
 			return []
+
+class ActionDefaultRestaurants(Action):
+
+	def name(self):
+		return "action_default_restaurants"
+
+	def run(self, dispatcher, tracker, domain):
+		location = tracker.get_slot('location')
+
+		z = Zomato()
+
+		l = z.getDefaultRestaurants(str(location))
+
+		if l:
+			response = ""
+			for i in range(0, len(l), 2):
+				if i==len(l):
+					break
+				response += l[i]
+				response += "\n" + l[i+1]
+				response += "\n"
+			print(response)
+			dispatcher.utter_template('utter_restaurants_noCuisine', tracker=tracker, response=response)
+		else:
+			dispatcher.utter_message(template= "I'm sorry, couldn't find restaurants." )
+
+		return []

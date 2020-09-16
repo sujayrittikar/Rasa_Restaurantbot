@@ -1,81 +1,71 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - restaurant_search
-  - cuisine
-  - location
-  - location_cuisine
-
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- restaurant_search
+- cuisine
+- location
+- location_cuisine
 entities:
-  - cuisine
-
+- cuisine
 slots:
   cuisine:
     type: text
   location:
     type: text
-
-actions:
-  - utter_greet
-  - utter_did_that_help
-  - utter_goodbye
-  - utter_affirm
-  - utter_affirm_location
-  - utter_ask_location
-  - utter_ask_cuisine
-  - utter_ask_location_cuisine
-  - action_set_location
-  - action_show_restaurants
-  - utter_default
-  - utter_restaurants
-
 responses:
   utter_greet:
-  - text: "Hi! I'm a Restaurant Bot! How may I help you?"
-
+  - text: Hi! I'm a Restaurant Bot! How may I help you?
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
   utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: Did that help you?
   utter_happy:
-  - text: "Nice to hear it!"
-
+  - text: Nice to hear it!
   utter_goodbye:
-  - text: "Bye, hope you have a good day ahead."
-
+  - text: Bye, hope you have a good day ahead.
   utter_iamabot:
-  - text: "I am a Restau-bot, powered by Rasa."
-
+  - text: I am a Restau-bot, powered by Rasa.
   utter_ask_location:
-  - text: "Can you share your location with me? (Please specify clear location. :)"
-
+  - text: Can you share your location with me? (Please specify clear location. :)
   utter_ask_cuisine:
-  - text: "What kind of cuisine you wanna eat?"
-
+  - text: What kind of cuisine you wanna eat?
   utter_ask_location_cuisine:
-  - text: "Share your location and the cuisine you wanna gulp!"
-
+  - text: Share your location and the cuisine you wanna gulp!
   utter_affirm_location:
-  - text: "Thank you for sharing your location."
-
+  - text: Thank you for sharing your location.
   utter_affirm:
-  - text: "Thanks for sharing, I'll check on what I have! :)"
-
+  - text: Thanks for sharing, I'll check on what I have! :)
   utter_default:
-  - text: "I didn't get what you said. Come again? -_-"
-
+  - text: I didn't get what you said. Come again? -_-
   utter_restaurants:
   - text: "Your restaurants are: \n {response}"
+  utter_restaurants_noCuisine:
+  - text: "The top restaurants in your are are: \n {response}"
 
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_goodbye
+- utter_affirm
+- utter_affirm_location
+- utter_ask_location
+- utter_ask_cuisine
+- utter_ask_location_cuisine
+- action_set_location
+- action_show_restaurants
+- utter_default
+- utter_restaurants
+- utter_cheer_up
+- utter_happy
+- utter_iamabot
+- utter_restaurants_noCuisine
+- action_default_restaurants
