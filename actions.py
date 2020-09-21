@@ -33,7 +33,7 @@ class BingLocation:
 
 	def __init__(self):
 		self.baseurl = "http://dev.virtualearth.net/REST/v1/Locations"
-		self.bing_key = "AmAFc-8A6ubuUDQoWFKMF9EU335W20mAJTqBexfUqASF25iiWIBqjb5xc6RWooad"
+		self.bing_key = "Use your Bing API Key"
 
 	def getLocationInfo(self, query, tracker):
 
@@ -75,7 +75,7 @@ class Zomato:
 
 	def __init__(self):
 		self.baseurl = "https://developers.zomato.com/api/v2.1/"
-		self.key = "8fbadec1470035c74baf9747b6b6b236"
+		self.key = "Use your Zomato API Key"
 
 	def getId(self, location):
 		location_info = []
