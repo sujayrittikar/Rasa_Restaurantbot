@@ -131,6 +131,7 @@ class Zomato:
 			"entity_type": location[3],
 			"entity_id": location[2],
 			"cuisines": cuisine_id,
+			"sort": "rating",
 			"count": 3
 		}
 
@@ -155,6 +156,7 @@ class Zomato:
 		queryString = {
 			"entity_id": loc[2],
 			"entity_type": loc[3],
+			"sort": "rating",
 			"count": 3
 		}
 
