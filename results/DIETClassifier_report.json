@@ -1,26 +1,26 @@
 {
   "cuisine": {
-    "precision": 1.0,
+    "precision": 0.967741935483871,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 27
+    "f1-score": 0.9836065573770492,
+    "support": 30
   },
   "micro avg": {
-    "precision": 1.0,
+    "precision": 0.967741935483871,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 27
+    "f1-score": 0.9836065573770492,
+    "support": 30
   },
   "macro avg": {
-    "precision": 1.0,
+    "precision": 0.967741935483871,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 27
+    "f1-score": 0.9836065573770492,
+    "support": 30
   },
   "weighted avg": {
-    "precision": 1.0,
+    "precision": 0.9677419354838709,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 27
+    "f1-score": 0.9836065573770492,
+    "support": 30
   }
 }

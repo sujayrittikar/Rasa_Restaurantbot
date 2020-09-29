@@ -16,6 +16,10 @@
 - ola
 - you there?
 - bot
+- oye
+- bhaai
+- bro
+- dude
 
 
 ## intent:goodbye
@@ -28,6 +32,7 @@
 - thanks a lot!
 - later
 - alright byeee
+- chalo
 
 ## intent:affirm
 - yes
@@ -43,6 +48,11 @@
 - yup
 - correct
 - that's it
+- haa
+- bass
+- kafi
+- enough
+- perfect
 
 
 ## intent:deny
@@ -68,6 +78,8 @@
 - something
 - Show something
 - I don't know cuisines
+- nahi
+- nai
 
 ## intent:mood_great
 - perfect
@@ -84,6 +96,10 @@
 - I'm great
 - I'm cool
 - I'm wonderful
+- badhiya
+- mast
+- maje me
+- chill
 
 ## intent:mood_unhappy
 - sad
@@ -98,12 +114,16 @@
 - so sad
 - not in mood
 - pretty bad
+- bura
+- udas
 
 ## intent:bot_challenge
 - are you a bot?
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+- kya ho tum?
+- naam kya hai?
 
 ## intent: restaurant_search
 - restaurants
@@ -118,6 +138,12 @@
 - list out the restaurants
 - any restaurants around
 - I want to eat something
+- eat
+- hungry
+- bhuk
+- bohot bhuk lagi hai bhai
+- hotel
+- khana
 
 ## intent: cuisine
 - I'd like some [chinese](cuisine)
@@ -136,6 +162,9 @@
 - I'll taste some [seafood](cuisine) 
 - Bring me [Rajasthani](cuisine)
 - [Pizza](cuisine)
+- [burger](cuisine)
+- mujhe [punjabi](cuisine) khana hai
+- [cake](cuisine) dikhao
 
 ## intent: location
 - I live in mumbai
@@ -154,6 +183,18 @@
 - chennai
 - indore
 - I am in noida
+- delhi
+- hyderabad
+- chennai
+- thane
+- nagpur
+- nashik
+- belgaum
+- kochi
+- kottayyam
+- tumkur
+- hosur
+- mai mumbai me hu
 
 ## intent: location_cuisine
 - Hey, I'm looking out for [arabian](cuisine) in chennai
@@ -164,6 +205,64 @@
 - Suggest me [mexican](cuisine) in delhi
 - Any [Greek](cuisine) in pune?
 - I want some [rolls](cuisine) in indore
+- 
+
+## intent: get_menu
+- I want the menu of Dominos
+- Show me the menu of Delicious
+- menu of balle balle restaurant
+- show me prices of dacdenils
+- menu
+- prices
+- Tell me prices of Laziz
+- what are prices
+- which items are there on the menu of Aao Ji Khao Ji
+- gimme some menu
+
+## intent: order
+- I want to order
+- order
+- Let me order something
+- Take my order 
+- I want to order
+- mujhe order karna hai
+- mangao
+
+## intent: get_order
+- Roti
+- Paneer Handi
+- Tikka Masala
+- 1 Italian Pizza
+- 2 White sauce pasta
+- 1 Veg Burger and french fries
+- Hakka noodles
+- Akkha masoor
+
+## intent: get_address
+- 210 Red Enclave, bommanhalli, bengaluru
+- 3rd street, vimannagar, pune
+- Vanvikas society, Miraj
+- Lion's villa, Irwin Road, Sangli
+
+## intent: get_contact
+- i would like to book with the contact number 9436864412
+- please book with 1111111111
+- kindly book with 9999999999
+- ya please take it 5555555555
+- write it down it is 3333333333
+- it's 1010653781
+- sure. 9436864412
+- 8700981533
+- yes please note down it is 9436864412
+- yes please note it down it is 9436864412
+- it is 9711236681
+- my contact number will be 8700981613
+- 8826788729
+- use 1123344556
+- book with 3412367841
+- save it as 8826799364
+- its 7565433221
+
 
 ## lookup: cuisine
   cuisine.txt

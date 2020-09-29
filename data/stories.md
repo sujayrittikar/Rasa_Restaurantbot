@@ -69,3 +69,43 @@
   - action_show_restaurants
 * goodbye
   - utter_goodbye
+
+## get menu
+* greet
+  - utter_greet
+* location_cuisine
+  - slot{"location": "Sangli"}
+  - slot{"cuisine": "maharashtrian"}
+  - utter_affirm
+  - action_show_restaurants
+* get_menu
+  - action_menu
+* goodbye
+  - utter_goodbye 
+
+## get order
+* greet
+  - utter_greet
+* location_cuisine
+  - slot{"location": "Kolhapur"}
+  - slot{"cuisine": "Pizza"}
+  - utter_affirm
+  - action_show_restaurants
+* get_menu
+  - action_menu
+* order
+  - utter_ask_order
+* get_order
+  - action_set_order
+  - slot{"order": "3 Roti, 1 Paneer Tikka Masala"}
+  - utter_ask_address
+* get_address
+  - action_set_address
+  - slot{"address": "405 Red Enclave, Time Society, Sangli"}
+  - utter_ask_contact
+* get_contact
+  - action_set_contact
+  - slot{"contact": "9051328610"}
+  - action_ask_confirm
+* affirm
+  - utter_ordered

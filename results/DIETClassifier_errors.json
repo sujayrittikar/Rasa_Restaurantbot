@@ -1,0 +1,15 @@
+[
+  {
+    "text": "1 Italian Pizza",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "cuisine",
+        "start": 2,
+        "end": 9,
+        "value": "Italian",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

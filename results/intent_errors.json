@@ -4,7 +4,15 @@
     "intent": "affirm",
     "intent_prediction": {
       "name": "mood_great",
-      "confidence": 0.5302074551582336
+      "confidence": 0.7236186265945435
+    }
+  },
+  {
+    "text": "perfect",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.44281697273254395
     }
   }
 ]
