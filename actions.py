@@ -242,7 +242,6 @@ class ActionDefaultRestaurants(Action):
 
 		return []
 
-
 def valid_restaurant(resp, l):
 	x = resp.split()
 	temp = []
@@ -383,6 +382,3 @@ class AskConfirm(Action):
 		response = "Your Order: " + str(order) + "\n" + "Address: " + str(address) + "\n" + "Contact No.:" + str(contact)
 		dispatcher.utter_template('utter_confirm_order', tracker=tracker, response=response)
 		return []
-
-
-
